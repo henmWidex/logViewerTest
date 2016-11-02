@@ -12,7 +12,7 @@ class Model {
     
     static let sharedInstance: Model = Model()
     
-    var exampleList: [UInt32] = [1, 2, 1, 1, 3, 2, 3, 1, 2, 2, 3, 3];
+    var exampleList: [UInt32] = [1, 2, 1, 1, 0, 2, 0, 1, 2, 2, 0, 0];
     
     func subscribe(callback: @escaping (UInt32) -> Void) {
         DispatchQueue.global(qos: .background).async {
