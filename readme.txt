@@ -2,7 +2,7 @@ Imagine we are creating a log-viewer tool which receives events at random interv
 1 is a good result :), 2 a warning :| and 3 a bad result :(
 
 1)	Add a list view showing all events (you can use the model.exampleList as source)
-2)	Customize the rows in a way you find appropriate. Use the smileys to indicate the event instead of the number
+2)	Customize the rows in a way you find appropriate. Use the smileys (found in Assets.xcassets) to indicate the event instead of the number
 3)	Use the model.onLogReceived-method to populate your list instead of the exampleList
 
 4) Add a description page which is shown when you press a tablecell
