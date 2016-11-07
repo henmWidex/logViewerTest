@@ -24,10 +24,6 @@ class Model {
     }
     
     func onLogReceived(value: UInt32){
-        // TODO handle this
-        
-        if let callback = self.handler {
-            callback(value)
-        }
+        // TODO handle this        
     }
 }
