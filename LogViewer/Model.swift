@@ -12,18 +12,22 @@ class Model {
     
     static let sharedInstance: Model = Model()
     
+    let externalLib: ExternalLib;
+    
     var exampleList: [UInt32] = [1, 2, 1, 1, 0, 2, 0, 1, 2, 2, 0, 0];
     
-    func subscribe(callback: @escaping (UInt32) -> Void) {
-        DispatchQueue.global(qos: .background).async {
-            while(true){
-                let e = arc4random_uniform(3);
-                callback(e);
-                
-                let rand = Double(arc4random_uniform(1000)) / 1000.0
-                let interval = 1.0 + (rand * 2.5)
-                Thread.sleep(forTimeInterval: interval)
-            }
+    var handler: ((UInt32) -> Void)?
+    
+    init() {
+        self.externalLib = ExternalLib()
+        self.externalLib.subscribe(callback: self.onLogReceived)
+    }
+    
+    func onLogReceived(value: UInt32){
+        // TODO handle this
+        
+        if let callback = self.handler {
+            callback(value)
         }
     }
 }

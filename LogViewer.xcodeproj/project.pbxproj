@@ -14,6 +14,7 @@
 		B521FF5F1DCA118C00993AFA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521FF5E1DCA118C00993AFA /* Model.swift */; };
 		B521FF611DCA1DF600993AFA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521FF601DCA1DF600993AFA /* TableViewController.swift */; };
 		B521FF631DCA21F600993AFA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521FF621DCA21F600993AFA /* TableViewCell.swift */; };
+		B597AE191DD0645100805E4F /* ExternalLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597AE181DD0645100805E4F /* ExternalLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B521FF5E1DCA118C00993AFA /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B521FF601DCA1DF600993AFA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B521FF621DCA21F600993AFA /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B597AE181DD0645100805E4F /* ExternalLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B521FF5E1DCA118C00993AFA /* Model.swift */,
 				B521FF601DCA1DF600993AFA /* TableViewController.swift */,
 				B521FF621DCA21F600993AFA /* TableViewCell.swift */,
+				B597AE181DD0645100805E4F /* ExternalLib.swift */,
 			);
 			path = LogViewer;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				B521FF631DCA21F600993AFA /* TableViewCell.swift in Sources */,
 				B521FF611DCA1DF600993AFA /* TableViewController.swift in Sources */,
 				B521FF4D1DCA116A00993AFA /* AppDelegate.swift in Sources */,
+				B597AE191DD0645100805E4F /* ExternalLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +311,7 @@
 				B521FF5D1DCA116A00993AFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

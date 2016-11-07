@@ -17,7 +17,7 @@ class TableViewController: UITableViewController {
         
         //self.items = Model.sharedInstance.exampleList
         
-        Model.sharedInstance.subscribe { (e) in
+        Model.sharedInstance.handler = { (e) in
             DispatchQueue.main.async {
                 self.items.append(e)
                 self.tableView.insertRows(at: [IndexPath(row: self.items.count - 1, section: 0)], with: .automatic)
