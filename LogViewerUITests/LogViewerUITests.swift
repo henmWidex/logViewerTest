@@ -31,6 +31,25 @@ class LogViewerUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        
+        
+        app.cells.element(boundBy: 0).tap()
+        app.navigationBars["UIView"].buttons.matching(identifier: "Back").element(boundBy: 0).tap()
+        
+        app.cells.element(boundBy: 1).tap()
+        app.navigationBars["UIView"].buttons.matching(identifier: "Back").element(boundBy: 0).tap()
+        
+        app.cells.element(boundBy: 2).tap()
+        app.navigationBars["UIView"].buttons.matching(identifier: "Back").element(boundBy: 0).tap()
+        
+        
+        app.cells.element(boundBy: 3).tap()
+        app.navigationBars["UIView"].buttons.matching(identifier: "Back").element(boundBy: 0).tap()
+        
+        XCTAssert(true)
+        
     }
     
 }

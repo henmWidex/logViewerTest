@@ -16,6 +16,7 @@
 		B521FF631DCA21F600993AFA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B521FF621DCA21F600993AFA /* TableViewCell.swift */; };
 		B59288911E0D124E0052E89F /* LogViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59288901E0D124E0052E89F /* LogViewerUITests.swift */; };
 		B592889F1E0D125B0052E89F /* LogViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B592889E1E0D125B0052E89F /* LogViewerTests.swift */; };
+		B59288A71E0D16E50052E89F /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59288A61E0D16E50052E89F /* TableViewControllerTests.swift */; };
 		B597AE191DD0645100805E4F /* ExternalLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B597AE181DD0645100805E4F /* ExternalLib.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		B592889C1E0D125B0052E89F /* LogViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B592889E1E0D125B0052E89F /* LogViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewerTests.swift; sourceTree = "<group>"; };
 		B59288A01E0D125B0052E89F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B59288A61E0D16E50052E89F /* TableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
 		B597AE181DD0645100805E4F /* ExternalLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 			children = (
 				B592889E1E0D125B0052E89F /* LogViewerTests.swift */,
 				B59288A01E0D125B0052E89F /* Info.plist */,
+				B59288A61E0D16E50052E89F /* TableViewControllerTests.swift */,
 			);
 			path = LogViewerTests;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B592889F1E0D125B0052E89F /* LogViewerTests.swift in Sources */,
+				B59288A71E0D16E50052E89F /* TableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
