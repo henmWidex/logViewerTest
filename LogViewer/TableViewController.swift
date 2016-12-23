@@ -9,32 +9,26 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+    
     var items: [UInt32] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //self.items = Model.sharedInstance.exampleList
+        self.items = Model.sharedInstance.exampleList
         
-        Model.sharedInstance.handler = { (e) in
-            DispatchQueue.main.async {
-                self.items.append(e)
-                self.tableView.insertRows(at: [IndexPath(row: self.items.count - 1, section: 0)], with: .automatic)
-            }
-        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count
     }
@@ -66,5 +60,28 @@ class TableViewController: UITableViewController {
         cell.labelView?.text = "#\(e)"
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let cell = sender as? UITableViewCell,
+            let indexPath = self.tableView.indexPath(for: cell){
+            let item = items[indexPath.row]
+            
+            
+            var color: UIColor = .white
+            switch item {
+            case 0:
+                color = .green
+            case 1:
+                color = .yellow
+            case 2:
+                color = .red
+            default:
+                break
+            }
+            
+            segue.destination.view.backgroundColor = color
+        }
     }
 }
